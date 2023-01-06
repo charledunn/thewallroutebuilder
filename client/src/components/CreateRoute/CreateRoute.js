@@ -32,7 +32,7 @@ const CreateRoute = () => {
     <Grow in>
       <Container maxWidth="xl">
         <Grid container justify="space-between" alignItems="stretch" spacing={3}>
-          <Grid className={classes.leftContainer} item xs={12} sm={4}>
+          <Grid className={classes.leftContainer} item sm={12} lg={4}>
             <Paper className={classes.explainPaper} elevation={6}>
               <Typography variant="body1">
                 To create a route, drag the holds from the right (from below on mobile) to where you want them to be. You can rotate them in 45 degree intervals by clicking the arrow. Take a screenshot of the route and select your screenshot with the choose file button in the form. (Wall Dimensions are 8ft x 12ft with a 45 degree overhang starting inbetween the second and third row of holes.
@@ -40,7 +40,7 @@ const CreateRoute = () => {
             </Paper>
             <Form currentId={currentId} setCurrentId={setCurrentId} />
           </Grid>
-          <Grid className={classes.rightContainer} item xs={12} sm={5}>
+          <Grid className={classes.rightContainer} item sm={12} lg={5}>
             <Paper className={classes.gridPaper} elevation={6}>
               <div className={classes.wallGrid}>
                 {nodes.map(() => {
@@ -51,7 +51,7 @@ const CreateRoute = () => {
               </div>
             </Paper>
           </Grid>
-          <Grid className={classes.images} item xs={12} sm={3}>
+          <Grid className={classes.images} item sm={12} lg={3}>
             <DraggableImage className={classes.smHold} src={creasedCrimps} alt="creasedCrimps" />
             <DraggableImage className={classes.smHold} src={creasedCrimps} alt="creasedCrimps" />
             <DraggableImage className={classes.smHold} src={crimpStyleII} alt="crimpStyleII" />

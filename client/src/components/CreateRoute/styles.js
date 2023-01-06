@@ -2,7 +2,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 export default makeStyles ((theme) => ({
   rightContainer: {
-    [theme.breakpoints.down('xs')]: {
+    [theme.breakpoints.down('lg')]: {
       flexDirection: 'column-reverse',
     },
   },
@@ -12,11 +12,9 @@ export default makeStyles ((theme) => ({
   },
   gridPaper: {
     height: '85vh',
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('xs')]: {
       height: '60vh',
-    },
-    [theme.breakpoints.down('sm')]: {
-      height: '55vh',
+      width: '80vw',
     },
   },
   wallGrid: {
@@ -32,47 +30,31 @@ export default makeStyles ((theme) => ({
   },
   smHold: {
     height: '27px',
-    [theme.breakpoints.down('md')]: {
-      height: '21px',
-    },
-    [theme.breakpoints.down('sm')]: {
-      height: '16px',
-    },
   },
   lgHold: {
     height: '35px',
-    [theme.breakpoints.down('md')]: {
-      height: '27px',
-    },
-    [theme.breakpoints.down('sm')]: {
-      height: '24px',
-    },
   },
   foothold: {
     height: '11px',
-    [theme.breakpoints.down('md')]: {
-      height: '7px',
-    },
-    [theme.breakpoints.down('sm')]: {
-      height: '6px',
-    },
   },
   volume: {
     height: '180px',
-    [theme.breakpoints.down('md')]: {
-      height: '106px',
-    },
-    [theme.breakpoints.down('sm')]: {
-      height: '67px',
-    },
   },
   sloper: {
     height: '120px',
-    [theme.breakpoints.down('md')]: {
-      height: '71px',
-    },
-    [theme.breakpoints.down('sm')]: {
-      height: '48px',
-    },
+  },
+  [theme.breakpoints.down('md')]: {
+    smHold: {height: '21px',},
+    lgHold: {height: '27px',},
+    foothold: {height: '7px',},
+    volume: {height: '106px',},
+    sloper: {height: '71px',},
+  },
+  [theme.breakpoints.down('sm')]: {
+    smHold: {height: '16px',},
+    lgHold: {height: '24px',},
+    foothold: {height: '6px',},
+    volume: {height: '67px',},
+    sloper: {height: '48px',},
   },
 }));
