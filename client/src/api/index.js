@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API = axios.create({ baseURL: 'https://thewallroutebuilder.herokuapp.com/' });
+const API = axios.create({ baseURL: 'https://thewallroutebuilder.up.railway.app/' });
 
 API.interceptors.request.use((req) => {
   if (localStorage.getItem('profile')) {
